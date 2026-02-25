@@ -71,12 +71,15 @@ El sistema incluye:
 
 ### Ejemplo de control de acceso
 
+```php
 session_start();
 
 if (!isset($_SESSION["empleado"])) {
     header("Location: login.php");
     exit();
 }
+```
+
 ## 📊 Funcionalidades Implementadas
 
 ### ✔ CRUD completo sobre Clientes
@@ -116,17 +119,21 @@ Base de datos relacional con:
 1. Importar `taller.sql` en MySQL.  
 2. Configurar el archivo `.env`:
 
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
 DB_NAME=taller
+```
 
 ## 🚀 Ejecutar desde la carpeta PHP en servidor local
 
 - **Con XAMPP:** [http://localhost/PHP/main.html](http://localhost/PHP/main.html)  
 - **Usando servidor embebido:**
 
+```bash
 php -S localhost:8000
+```
 
 ## 🧠 Competencias demostradas
 
