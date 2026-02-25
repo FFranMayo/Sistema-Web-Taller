@@ -71,7 +71,6 @@ El sistema incluye:
 
 ### Ejemplo de control de acceso
 
-```php
 session_start();
 
 if (!isset($_SESSION["empleado"])) {
