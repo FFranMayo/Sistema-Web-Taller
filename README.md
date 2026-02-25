@@ -113,10 +113,9 @@ Base de datos relacional con:
 
 ## 🚀 Cómo ejecutar el proyecto
 
-1. Importar `taller.sql` en MySQL.
+1. Importar `taller.sql` en MySQL.  
 2. Configurar el archivo `.env`:
 
-```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
@@ -127,7 +126,6 @@ DB_NAME=taller
 - **Con XAMPP:** [http://localhost/PHP/main.html](http://localhost/PHP/main.html)  
 - **Usando servidor embebido:**
 
-```bash
 php -S localhost:8000
 
 ## 🧠 Competencias demostradas
