@@ -1,0 +1,13 @@
+# Variables de entorno
+.env
+
+# Logs
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de entorno (por si en el futuro usas Composer)
+vendor/
+node_modules/

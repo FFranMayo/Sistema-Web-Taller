@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="recursos/icon.ico" type="image/x-icon">
+    <title>Taller Relojería</title>
+</head>
+
+<body id="main">
+
+    <header>
+        <img src="recursos/reloj.jpg" alt="Taller de Relojería" title="Taller de Relojería">
+        <h1>Taller Relojería</h1>
+    </header>
+
+    <main>
+
+        <div class="contenedor_login">
+            
+            <!-- Registro de Empleado -->
+            <section id="registro">
+                <form action="registro.php" method="post" id="formRegistro">
+                    <h2>Registro de Empleado</h2>
+            
+                    <div class="campo">
+                        <label for="nombre_reg">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre_reg" minlength="4" maxlength="100" title="Debe ser más de 3 letras" required>
+                    </div>
+            
+                    <div class="campo">
+                        <label for="especialidad">Especialidad:</label>
+                        <input type="text" name="especialidad" id="especialidad" maxlength="50" title="Describa su especialidad" required>
+                    </div>
+            
+                    <div class="campo">
+                        <label for="password_reg">Contraseña:</label>
+                        <input type="password" name="password" id="password_reg" required>
+                    </div>
+            
+                    <div class="campo">
+                        <label for="clave_reg2">Confirmar contraseña:</label>
+                        <input type="password" name="clave2" id="clave_reg2" required>
+                    </div>
+            
+                    <div class="acciones">
+                        <input type="submit" value="Registrar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Inicio de Sesión de Empleado -->
+            <section id="login">
+                <form action="login.php" method="post" id="formLogin">
+                    <h2>Inicio de Sesión</h2>
+            
+                    <div class="campo">
+                        <label for="nombre_log">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre_log" minlength="4" maxlength="100" required>
+                    </div>
+            
+                    <div class="campo">
+                        <label for="password_log">Contraseña:</label>
+                        <input type="password" name="password" id="password_log" required>
+                    </div>
+            
+                    <div class="acciones">
+                        <input type="submit" value="Iniciar sesión">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <address>Francisco José Mayo Gutiérrez</address>
+    </footer>
+
+    <script src="menu.js"></script>
+
+</body>
+</html>
